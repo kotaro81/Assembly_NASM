@@ -1,0 +1,3 @@
+->uma boa pratica é colocar todos os dados em um programa e fazer uma tabela de valores
+->vamos implementar um segmento de dado "segment .data" no programa "entrada.asm"
+->quando precisarmos de algum desses dados basta chamar eles

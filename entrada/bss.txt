@@ -1,0 +1,2 @@
+-> existe uma seção chamada Block Starting Symbol e nela colocamos todas as variaveis que serao modificadas pelo programa
+-> Há uma tabela para definir seus valores 
