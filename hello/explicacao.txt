@@ -1,0 +1,50 @@
+a estrutura do programa se divide em 2 partes, uma seção ".data" que é o local de declaração
+de constantes e uma seção ".text" que teremos o que realmente o programa executara.
+Um marcador em particular deve ser o primeiro e definido atraves do comando "global" e
+padronizado com o nome "_start". Segue a estrutura:
+
+ section .data
+
+ section .text
+
+ global _start
+
+ _start:
+
+
+
+Assembly trabalha com registradores de memoria e isso corresponde a uma tabela que sempre
+devemos ter em mente quando programamos(olhar tabela no livro)
+
+comandos:
+ mov destino,origem
+ o segundo valor que sera transportado para o primeiro.Ex.:
+ mov eax, 0x1
+
+ para o registrador eax, mover o numero 1 significa o final da operação, corresponde a
+ System.exit
+
+ o valor de ebx é meramente informativo:
+ mov ebx, 0x0
+ podemos colocar qualquer valor, usamos zero como padrao para indicar que tudo ocorreu bem
+ com nosso programa
+
+ por fim, mandamos a informação para o sistema operacional com:
+ int 0x80
+ corresponde a 128 em decimal e indica ao SO que agora ele pode realizar as ações sem
+ problema, ou seja , pode executar
+
+
+mostrar mensagem:
+ precisamos declarar duas constantes que é feito na seção .data:
+ section .data
+  msg db 'Hello World!', 0xA
+  tam equ $- msg
+
+  0xA é uma quebra de linha, valor 10
+
+A marcação "tam" contém a quantidade
+de caracteres que se encontra em "msg", isso é realizado pelo comando "$- variável". A palavra chave
+"equ"está apenas firmando e declarando que "tam"é uma constante.
+
+
