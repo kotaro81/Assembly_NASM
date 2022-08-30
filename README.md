@@ -17,3 +17,13 @@ estudos sobre assembly na arquitetura Intel 64 baseado no livro "Assembly na Pr�
 ## Tabela de definição:
 
 ![Screenshot 2022-08-28 at 00-27-20 AsmNasm pdf](https://user-images.githubusercontent.com/107145843/187056078-d2eb4567-2ef4-4744-9168-ba51499ab424.png)
+
+## Compilação:
+### Criar arquivo objeto:
+nasm -f elf64 -o nome_arquivo.o nome_arquivo.asm
+
+### Linkedição:
+ld nome_arquivo.o -o nome_arquivo
+
+### Executar:
+./nome_arquivo
