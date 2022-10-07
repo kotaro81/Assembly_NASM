@@ -23,7 +23,7 @@ estudos sobre assembly na arquitetura Intel 64 baseado no livro "Assembly na Pr�
 nasm -f elf64 -o nome_arquivo.o nome_arquivo.asm
 
 ### Linkedição:
-ld nome_arquivo.o -o nome_arquivo
+ld nome_arquivo.o -o nome_executavel
 
 ### Executar:
-./nome_arquivo
+./nome_executavel
