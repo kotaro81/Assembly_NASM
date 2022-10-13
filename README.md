@@ -1,5 +1,5 @@
 # Assembly_NASM
-estudos sobre assembly na arquitetura Intel 64 baseado no livro "Assembly na Prática"
+
 
 ## Registradores de propósito geral:
 
