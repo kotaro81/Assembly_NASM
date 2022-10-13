@@ -28,7 +28,7 @@ ld nome_arquivo.o -o nome_executavel
 ### Executar:
 ./nome_executavel
 
-###AVISO:
+### AVISO:
 em caso do programa não aceitar instruções com registradores com R, coloque no topo do programa .asm :
 BITS 64
 
